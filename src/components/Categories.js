@@ -3,10 +3,10 @@ import { useProductsContext } from '../context/products_context';
 import styled from 'styled-components';
 import Error from './Error';
 import Loading from './Loading';
-import Product from './Product';
+import Category from './Category';
 
 const FeaturedProducts = () => {
-  const { products_loading: loading, products_error: error, featured_products: featured } = useProductsContext();
+  const { categories_loading: loading, categories_error: error, categories } = useProductsContext();
   if (loading) {
     return <Loading />;
   }
@@ -22,8 +22,8 @@ const FeaturedProducts = () => {
         <div className='underline'></div>
       </div>
       <div className='section-center featured'>
-        {featured.slice(0, 6).map((product) => {
-          return <Product key={product.id} {...product} />;
+        {categories.slice(0, 6).map((product) => {
+          return <Category key={product.id} {...product} />;
         })}
       </div>
     </Wrapper>

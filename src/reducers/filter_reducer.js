@@ -29,12 +29,6 @@ const filter_reducer = (state, action) => {
     const { sort, filtered_products } = state;
     let tempProducts = [...filtered_products];
 
-    if (sort === 'price-lowest') {
-      tempProducts = tempProducts.sort((a, b) => a.price - b.price);
-    }
-    if (sort === 'price-highest') {
-      tempProducts = tempProducts.sort((a, b) => b.price - a.price);
-    }
     if (sort === 'name-a') {
       tempProducts = tempProducts.sort((a, b) => {
         return a.name.localeCompare(b.name);
@@ -55,7 +49,7 @@ const filter_reducer = (state, action) => {
 
   if (action.type === FILTER_PRODUCTS) {
     const { all_products } = state;
-    const { text, category, company, color, price, shipping } = state.filters;
+    const { text, category } = state.filters;
 
     let tempProducts = [...all_products];
 
@@ -69,28 +63,9 @@ const filter_reducer = (state, action) => {
     }
 
     // Category
+    console.log(category);
     if (category !== 'all') {
-      tempProducts = tempProducts.filter((product) => product.category === category);
-    }
-
-    // Company
-    if (company !== 'all') {
-      tempProducts = tempProducts.filter((product) => product.company === company);
-    }
-
-    // Color
-    if (color !== 'all') {
-      tempProducts = tempProducts.filter((product) => {
-        return product.colors.find((c) => c === color);
-      });
-    }
-
-    // Price
-    tempProducts = tempProducts.filter((product) => product.price <= price);
-
-    //Shipping
-    if (shipping) {
-      tempProducts = tempProducts.filter((product) => product.shipping === true);
+      tempProducts = tempProducts.filter((product) => product.categoryId.toString() === category);
     }
 
     return { ...state, filtered_products: tempProducts };
@@ -102,11 +77,7 @@ const filter_reducer = (state, action) => {
       filters: {
         ...state.filters,
         text: '',
-        company: 'all',
-        category: 'all',
-        color: 'all',
-        price: state.filters.max_price,
-        shipping: false,
+        category: 'all'
       },
     };
   }

@@ -1,0 +1,74 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Flower",
+      "image": "../assets/newLogo.png"
+    },
+    {
+      "id": 2,
+      "name": "Toran",
+      "image": "../assets/newLogo.png"
+    },
+    {
+      "id": 3,
+      "name": "Garland",
+      "image": "../assets/newLogo.png"
+    },
+    {
+      "id": 4,
+      "name": "Grass Mat",
+      "image": "../assets/newLogo.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name":"Daisy",
+      "categoryId":1,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "name":"Daisy",
+      "categoryId":1,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": true
+    },
+    {
+      "id": "3",
+      "name":"Daisy",
+      "categoryId":2,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": true
+    },
+    {
+      "id": "4",
+      "name":"Daisy",
+      "categoryId":3,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": false
+    },
+    {
+      "id": "5",
+      "name":"Daisy",
+      "categoryId":4,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": false
+    },
+    {
+      "id": "6",
+      "name":"Daisy",
+      "categoryId":4,
+      "description": "Lorem ipsum dolor",
+      "image": "../assets/newLogo.png",
+      "featured": false
+    }
+  ]
+}

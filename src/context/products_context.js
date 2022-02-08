@@ -1,7 +1,6 @@
-import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
-import { products_url as url } from '../utils/constants'
+import data from '../products.json'
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
@@ -11,17 +10,23 @@ import {
   GET_SINGLE_PRODUCT_BEGIN,
   GET_SINGLE_PRODUCT_SUCCESS,
   GET_SINGLE_PRODUCT_ERROR,
+  GET_CATALOGS_BEGIN,
+  GET_CATALOGS_SUCCESS,
+  GET_CATALOGS_ERROR
 } from '../actions'
 
 const initialState = {
   isSidebarOpen: false,
   products_loading: false,
+  categories_loading: false,
   products_error: false,
+  categories_error: false,
   products: [],
   featured_products: [],
   single_product_loading: false,
   single_product_error: false,
   single_product: {},
+  categories: []
 }
 
 const ProductsContext = React.createContext()
@@ -37,25 +42,33 @@ export const ProductsProvider = ({ children }) => {
     dispatch({type: SIDEBAR_CLOSE})
   }
 
-  const fetchProducts = async (url) => {
+  const fetchProducts = async () => {
     dispatch({ type: GET_PRODUCTS_BEGIN })
     
     try {
-      const response = await axios.get(url);
-      const products = response.data;
+      const products = data.products;
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
     } catch (error) {
       dispatch({ type: GET_PRODUCTS_ERROR });
     }
   }
 
-  const fetchSingleProduct = async (url) => {
+  const fetchCategories = async () => {
+    dispatch({ type: GET_CATALOGS_BEGIN })
+    
+    try {
+      const categories = data.category;
+      dispatch({ type: GET_CATALOGS_SUCCESS, payload: categories })
+    } catch (error) {
+      dispatch({ type: GET_CATALOGS_ERROR });
+    }
+  }
+
+  const fetchSingleProduct = async (id) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
 
     try {
-      const response = await axios.get(url);
-      const singleProduct = response.data;
-
+      const singleProduct = data.products.find(i => i.id === id.toString());
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
 
     } catch (error) {
@@ -64,7 +77,8 @@ export const ProductsProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    fetchProducts(url);
+    fetchProducts();
+    fetchCategories();
   }, [])
 
   return (

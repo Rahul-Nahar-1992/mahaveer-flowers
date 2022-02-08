@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useFilterContext } from '../context/filter_context';
-import { getUniqueValues } from '../utils/helpers';
+import { useProductsContext } from '../context/products_context';
 
 const Filters = () => {
   const {
     filters: { text, category },
-    updateFilters,
-    all_products,
+    updateFilters
   } = useFilterContext();
-
-  const categories = getUniqueValues(all_products, 'category');
+  const { categories } = useProductsContext();
 
   return (
     <Wrapper>
@@ -28,6 +26,16 @@ const Filters = () => {
       <div className='form-control'>
         <h5>category</h5>
         <div>
+          <button
+            key={0}
+            onClick={updateFilters}
+            type='button'
+            name='category'
+            value={'all'}
+            className={`${category === 'all' ? 'active' : null}`}
+          >
+            All
+          </button>
           {categories.map((c, index) => {
             return (
               <button
@@ -35,9 +43,10 @@ const Filters = () => {
                 onClick={updateFilters}
                 type='button'
                 name='category'
-                className={`${category === c.toLowerCase() ? 'active' : null}`}
+                value={c.id}
+                className={`${category === c.id.toString() ? 'active' : null}`}
               >
-                {c}
+                {c.name}
               </button>
             );
           })}
