@@ -204,3 +204,51 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
+
+.page-item.active .page-link {
+	z-index: 1;
+	color: #fff;
+	background-color: var(--clr-primary-4) !important;
+	border-color: var(--clr-primary-4) !important;
+}
+
+.pagination {
+	margin-bottom: 2em;
+	text-align: center !important;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination button {
+	margin-right: 10px;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+.pagination li button {
+	border-radius: 50% !important;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 2px;
+	margin-right: 2px;
+	display: inline-block;
+	text-align: center;
+  background-color: #fff;
+}
+
+.pagination li button:focus,
+.pagination li button:active {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.pagination li button:hover {
+	background: var(--clr-primary-4);
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.pagination li.active button {
+	border: 1px solid transparent !important;
+}
