@@ -42,8 +42,8 @@ const ProductList = () => {
   return <>
     {container}
     {products.length > itemsPerPage &&
-      <div className='row mt-5' style={{marginTop: '2rem'}}>
-        <div className='col-md-12 text-center'>
+      <div style={{ marginTop: '2rem' }}>
+        <div className='text-center'>
           <nav aria-label='Page navigation' className='text-center'>
             <ul className='pagination'>
               {currentPage !== 1 && <li className='page-item' key='prev' onClick={handlePrevClick}><button className='page-link button-link'>&lt;</button></li>}
