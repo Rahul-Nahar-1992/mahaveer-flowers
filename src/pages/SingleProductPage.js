@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
-import { formatPrice } from '../utils/helpers';
 import { Loading, Error, ProductImages, PageHero } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -33,7 +32,7 @@ const SingleProductPage = () => {
     return <Error type='single-product' />;
   }
 
-  const { name, price, description, stock, id: sku, company, images } = product;
+  const { name, description, id: sku, images } = product;
 
   return (
     <Wrapper>
@@ -46,21 +45,12 @@ const SingleProductPage = () => {
           <ProductImages images={images} />
           <section className='content'>
             <h2>{name}</h2>
-            <h5 className='price'>{formatPrice(price)}</h5>
+            {/* <h5 className='price'>Please contact</h5> */}
             <p className='desc'>{description}</p>
-            <p className='info'>
-              <span>Availability : </span>
-              {stock > 0 ? `In Stock (${stock})` : 'out of stock'}
-            </p>
 
             <p className='info'>
               <span>SKU : </span>
               {sku}
-            </p>
-
-            <p className='info'>
-              <span>Brand : </span>
-              {company}
             </p>
             <hr />
           </section>
