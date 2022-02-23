@@ -28,10 +28,10 @@ const Contact = () => {
             title="map"
             id="gmap_canvas"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.7539458833778!2d72.82680505046605!3d18.953164267519238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf648d0ee98d%3A0xeb29e8e92cb17eb6!2sMahaveer%20Flowers!5e0!3m2!1sen!2sin!4v1644419694877!5m2!1sen!2sin"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0">
+            marginHeight="0"
+            marginWidth="0">
           </iframe>
         </div>
 
