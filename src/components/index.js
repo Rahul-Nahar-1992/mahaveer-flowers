@@ -12,6 +12,7 @@ import Filters from './Filters'
 import ProductList from './ProductList'
 import Sort from './Sort'
 import PageHero from './PageHero'
+import RelatedProducts from './RelatedProducts'
 
 export {
   FeaturedProducts,
@@ -27,5 +28,6 @@ export {
   ProductList,
   Sort,
   PageHero,
-  Categories
+  Categories,
+  RelatedProducts
 }

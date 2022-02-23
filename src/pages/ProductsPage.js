@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import { Filters, ProductList, Sort, PageHero } from '../components';
+import { useLocation } from "react-router-dom";
+import { useFilterContext } from '../context/filter_context';
 
 const ProductsPage = () => {
+  const location = useLocation();
+  const { updateFilters } = useFilterContext();
+  
+  useEffect(() => {
+    if (location.state?.categoryId) {
+      updateFilters({ target: { name: 'category', value: location.state.categoryId.toString() } })
+    } else {
+      updateFilters({ target: { name: 'category', value: 'all' } })
+    }
+    // eslint-disable-next-line
+  },[])
+  
+
   return (
     <main>
       <PageHero title='products' />

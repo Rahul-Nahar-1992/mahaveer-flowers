@@ -63,7 +63,6 @@ const filter_reducer = (state, action) => {
     }
 
     // Category
-    console.log(category);
     if (category !== 'all') {
       tempProducts = tempProducts.filter((product) => product.categoryId.toString() === category);
     }

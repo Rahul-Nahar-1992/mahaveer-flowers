@@ -3,7 +3,7 @@ import { useFilterContext } from '../context/filter_context';
 import GridView from './GridView';
 import ListView from './ListView';
 
-const ProductList = () => {
+const ProductList = (state, props) => {
   const { filtered_products: products, grid_view } = useFilterContext();
   const [currentPage, setCurrentPage] = useState(1)
 

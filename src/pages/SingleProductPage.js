@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
-import { Loading, Error, ProductImages, PageHero } from '../components';
+import { Loading, Error, ProductImages, PageHero, RelatedProducts } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -56,6 +56,7 @@ const SingleProductPage = () => {
           </section>
         </div>
       </div>
+      <RelatedProducts />
     </Wrapper>
   );
 };

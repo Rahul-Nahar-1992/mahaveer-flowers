@@ -12,7 +12,10 @@ import {
   GET_SINGLE_PRODUCT_ERROR,
   GET_CATALOGS_BEGIN,
   GET_CATALOGS_SUCCESS,
-  GET_CATALOGS_ERROR
+  GET_CATALOGS_ERROR,
+  GET_RELATED_PRODUCT_BEGIN,
+  GET_RELATED_PRODUCT_ERROR,
+  GET_RELATED_PRODUCT_SUCCESS
 } from '../actions'
 
 const initialState = {
@@ -26,7 +29,10 @@ const initialState = {
   single_product_loading: false,
   single_product_error: false,
   single_product: {},
-  categories: []
+  categories: [],
+  related_products: [],
+  related_products_error: false,
+  related_products_loading: false
 }
 
 const ProductsContext = React.createContext()
@@ -69,10 +75,23 @@ export const ProductsProvider = ({ children }) => {
 
     try {
       const singleProduct = data.products.find(i => i.id === id.toString());
+      await fetchRelatedProducts(singleProduct.categoryId, singleProduct.id);
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
 
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
+    }
+  }
+
+  const fetchRelatedProducts = async (categoryId, id) => {
+    dispatch({ type: GET_RELATED_PRODUCT_BEGIN });
+
+    try {
+      const related_products = data.products.filter(i => i.categoryId === categoryId && i.id !== id);
+      dispatch({ type: GET_RELATED_PRODUCT_SUCCESS, payload: related_products });
+
+    } catch (error) {
+      dispatch({ type: GET_RELATED_PRODUCT_ERROR });
     }
   }
 
