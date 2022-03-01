@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai'
 
 const Contact = () => {
   return <Wrapper>
@@ -14,11 +15,15 @@ const Contact = () => {
           <ul style={{ listStyleType: 'none' }}>
             <li>
               <FaInstagram />
-              <a href="https://www.instagram.com/mahaveerflowers/"> Mahaveer Flowers</a>
+              <a href="https://www.instagram.com/mahaveerflowers/" target="_blank" rel="noreferrer"> Mahaveer Flowers</a>
             </li>
             <li>
               <FaWhatsapp />
-              <a href="https://wa.me/917715056121/"> (91) 7715056121</a>
+              <a href="https://wa.me/917715056121/" target="_blank" rel="noreferrer"> (91) 7715056121</a>
+            </li>
+            <li>
+              <AiOutlineMail />
+              <a href="mailto:info@mahaveerflowers.in" target="_blank" rel="noreferrer">info@mahaveerflowers.in</a>
             </li>
           </ul>
         </div>
