@@ -7,7 +7,7 @@ const AboutPage = () => {
   return <main>
     <PageHero title="about" />
     <Wrapper className="page section section-center">
-      <img src={stageDecor} alt="nice desk" />
+      <img src={stageDecor} alt="stage decor" />
       <article>
         <div className="title">
           <h2>our story</h2>
