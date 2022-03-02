@@ -10,25 +10,8 @@ const Contact = () => {
         <h2>meet us</h2>
         <div className='underline'></div>
       </div>
-      <div className="content service">
+      <div className="contact">
         <div>
-          <ul style={{ listStyleType: 'none' }}>
-            <li>
-              <FaInstagram />
-              <a href="https://www.instagram.com/mahaveerflowers/" target="_blank" rel="noreferrer"> Mahaveer Flowers</a>
-            </li>
-            <li>
-              <FaWhatsapp />
-              <a href="https://wa.me/917715056121/" target="_blank" rel="noreferrer"> (91) 7715056121</a>
-            </li>
-            <li>
-              <AiOutlineMail />
-              <a href="mailto:info@mahaveerflowers.in" target="_blank" rel="noreferrer">info@mahaveerflowers.in</a>
-            </li>
-          </ul>
-        </div>
-        <div className='underlineContact'></div>
-        <div style={{ overflow: 'hidden', background: 'none !important', maxWidth: '100%' }}>
           <iframe
             title="map"
             id="gmap_canvas"
@@ -39,60 +22,78 @@ const Contact = () => {
             marginWidth="0">
           </iframe>
         </div>
-
+        <div>
+          <div className='contact-title'>
+            <h4>contact us via</h4>
+            <div className='underline'></div>
+          </div>
+          <ul style={{ listStyleType: 'none', paddingTop: '1rem' }}>
+            <li>
+              <FaWhatsapp />
+              <a href="https://wa.me/917715056121/" target="_blank" rel="noreferrer"> (91) 7715056121</a>
+            </li>
+            <li>
+              <FaInstagram />
+              <a href="https://www.instagram.com/mahaveerflowers/" target="_blank" rel="noreferrer"> Mahaveer Flowers</a>
+            </li>
+            <li>
+              <AiOutlineMail />&nbsp;<a href="mailto:info@mahaveerflowers.in" target="_blank" rel="noreferrer">info@mahaveerflowers.in</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </Wrapper>
+  </Wrapper >
 }
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
   padding: 5rem 0;
-  h3 {
-    text-transform: capitalize;
-  }
   p {
     line-height: 2;
     max-width: 45em;
-    color: var(--clr-grey-5);
   }
-  .service {
+  h2 {
+    text-transform: capitalize;
+  }
+  .contact {
+    padding: 2rem;
+    margin: 4rem auto;
+    align-items: center;
+    display: grid;
     background: var(--clr-grey-9);
     text-align: center;
-    padding: 2.5rem 2rem;
     border-radius: var(--radius);
-    p {
-      color: var(--clr-primary-2);
+    gap: 2.5rem;
+    img {
+      height: 225px;
     }
   }
   iframe {
-    height: 300px;
-    width: 300px;
+    height: 20rem;
+    width: 20rem;
+    max-width: 100%;
   }
-  .content {
-    display: grid;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    grid-template-columns: 1fr;
+  .contact-title {
+    text-align: center;
   }
-  .underlineContact {
-    width: 15rem;
-    height: 0.05rem;
+  .contact-title .underline {
+    width: 8rem;
+    height: 0.2rem;
     background: #49a6e9;
     background: var(--clr-primary-5);
     margin-left: auto;
     margin-right: auto;
   }
-  @media (min-width: 992px) { 
-    .underlineContact {
-      width: 30rem;
-    }   
-    p {
-      margin-bottom: 0;
+  @media (min-width: 576px) {
+    .contact {
+      grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
     }
+  }
+  @media (min-width: 992px) {   
     iframe {
-      height: 500px;
-      width: 600px;
+      height: 32rem;
+      width: 38rem;
+      max-width: 100%;
     }
     ul li{
       font-size: x-large;
