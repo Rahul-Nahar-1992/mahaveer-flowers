@@ -30,9 +30,8 @@ const Wrapper = styled.section`
   img {
     width: 100%;
     display: block;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    height: 25rem;
+    object-fit: contain;
     border-radius: var(--radius);
     margin-bottom: 1rem;
   }

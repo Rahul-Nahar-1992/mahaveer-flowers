@@ -11,7 +11,7 @@ const ProductList = (state, props) => {
     return <h5 style={{ textTransform: 'none' }}>Sorry, no products matched your search..</h5>;
   }
 
-  const itemsPerPage = 2
+  const itemsPerPage = 9
 
   const handleClick = (event) => setCurrentPage(Number(event.target.id))
 

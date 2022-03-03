@@ -24,13 +24,12 @@ const Category = ({ image, name, id }) => {
 const Wrapper = styled.article`
   .container {
     position: relative;
-    background: var(--clr-black);
     border-radius: var(--radius);
   }
   img {
     width: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: var(--radius);
     transition: var(--transition);
   }
@@ -63,7 +62,7 @@ const Wrapper = styled.article`
   footer {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   footer h5,
