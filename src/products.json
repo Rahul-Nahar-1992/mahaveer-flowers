@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Artificial Flower Ladi",
-      "image": "../assets/newLogo.png"
+      "image": "https://i.imgur.com/e9vnoVc.jpg"
     }
   ],
   "products": [
@@ -14,11 +14,11 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "images": [
         {
-          "url": "https://drive.google.com/uc?export=view&id=1GyCEgrgJwyX_RLzRMLZxeZ_3tMc06rP1",
-          "filename": "logo.png"
+          "url": "https://i.imgur.com/e9vnoVc.jpg",
+          "filename": "GendaLadi.jpg"
         }
       ],
-      "image": "https://drive.google.com/uc?export=view&id=1GyCEgrgJwyX_RLzRMLZxeZ_3tMc06rP1",
+      "image": "https://i.imgur.com/e9vnoVc.jpg",
       "featured": true
     },
     {
@@ -28,11 +28,11 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "images": [
         {
-          "url": "https://drive.google.com/uc?export=view&id=1GHxosi9Bu_62BmIJ5YrNMWKIgO9p7BMV",
-          "filename": "logo.png"
+          "url": "https://i.imgur.com/SioQp8F.jpg",
+          "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://drive.google.com/uc?export=view&id=1GHxosi9Bu_62BmIJ5YrNMWKIgO9p7BMV",
+      "image": "https://i.imgur.com/SioQp8F.jpg",
       "featured": true
     }
   ]
