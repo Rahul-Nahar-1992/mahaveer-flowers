@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Door Set",
       "image": "https://i.imgur.com/pRWXDLp.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Garland",
+      "image": "https://i.imgur.com/6v8vcg1.jpg"
     }
   ],
   "products": [
@@ -121,8 +126,60 @@
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/MqIJj64.jpg",
+      "image": "https://i.imgur.com/MqIJj64.jpg"
+    },
+    {
+      "id": "9",
+      "name": "4/4 W Cutting Garland",
+      "categoryId": 3,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        {
+          "url": "https://i.imgur.com/6v8vcg1.jpg",
+          "filename": "SmallGendaLadi.jpg"
+        }
+      ],
+      "image": "https://i.imgur.com/6v8vcg1.jpg",
       "featured": true
+    },
+    {
+      "id": "10",
+      "name": "Diamond Cutting Garland",
+      "categoryId": 3,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        {
+          "url": "https://i.imgur.com/jJgN2JD.jpg",
+          "filename": "SmallGendaLadi.jpg"
+        }
+      ],
+      "image": "https://i.imgur.com/jJgN2JD.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Chakra Garland",
+      "categoryId": 3,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        {
+          "url": "https://i.imgur.com/fV9pMTU.jpg",
+          "filename": "SmallGendaLadi.jpg"
+        }
+      ],
+      "image": "https://i.imgur.com/fV9pMTU.jpg"
+    },
+    {
+      "id": "12",
+      "name": "W Cutting Plain Garland",
+      "categoryId": 3,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": [
+        {
+          "url": "https://i.imgur.com/n7uRc4D.jpg",
+          "filename": "SmallGendaLadi.jpg"
+        }
+      ],
+      "image": "https://i.imgur.com/n7uRc4D.jpg"
     }
   ]
 }
