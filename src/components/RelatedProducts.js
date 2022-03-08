@@ -7,7 +7,7 @@ import Product from './Product';
 
 const RelatedProducts = () => {
   const { related_products_loading: loading, related_products_error: error, related_products: related } = useProductsContext();
-  console.log(loading, error, related)
+  
   if (loading) {
     return <Loading />;
   }

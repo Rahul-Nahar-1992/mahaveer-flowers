@@ -6,17 +6,19 @@ import ListView from './ListView';
 const ProductList = (state, props) => {
   const { filtered_products: products, grid_view } = useFilterContext();
   const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 9
 
   if (products.length < 1) {
     return <h5 style={{ textTransform: 'none' }}>Sorry, no products matched your search..</h5>;
   }
 
-  const itemsPerPage = 9
+  if (products.length < itemsPerPage && currentPage !== 1) setCurrentPage(1)
+  
 
   const handleClick = (event) => setCurrentPage(Number(event.target.id))
-
   const handlePrevClick = () => setCurrentPage(currentPage - 1)
   const handleNextClick = () => setCurrentPage(currentPage + 1)
+
   const indexOfLastItem = currentPage * itemsPerPage
   const indexOfFirstItem = indexOfLastItem - itemsPerPage
   const currentItems = products.slice(indexOfFirstItem, indexOfLastItem)
