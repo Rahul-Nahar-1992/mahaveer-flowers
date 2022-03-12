@@ -14,7 +14,7 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <img src={logo} alt='Mahaveer Flowers' style={{margin: '-1.5rem'}} loading='lazy'/>
+            <img src={logo} alt='Mahaveer Flowers' style={{margin: '-1.5rem'}}/>
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar} aria-label='nav-toggle-button'>
             <FaBars />

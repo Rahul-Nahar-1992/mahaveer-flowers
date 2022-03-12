@@ -15,8 +15,8 @@ const Hero = () => {
       <Link to="/products" className="btn hero-btn">shop now</Link>
     </article>
     <article className="img-container">
-      <img src={stageDecor} alt="stage decoration" className="main-img" loading='lazy' />
-      <img src={marigold} alt="marigold in pot" className="accent-img" loading='lazy' />
+      <img src={stageDecor} alt="stage decoration" className="main-img" />
+      <img src={marigold} alt="marigold in pot" className="accent-img" />
     </article>
   </Wrapper>
 }
