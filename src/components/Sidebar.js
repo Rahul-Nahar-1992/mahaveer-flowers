@@ -13,7 +13,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
         <div className='sidebar-header'>
-          <img src={logo} className='logo' alt='Mahaveer Flowers' loading='lazy' />
+          <img src={logo} className='logo' alt='Mahaveer Flowers' />
           <button className='close-btn' type='button' onClick={closeSidebar} aria-label='close-btn'>
             <FaTimes />
           </button>
