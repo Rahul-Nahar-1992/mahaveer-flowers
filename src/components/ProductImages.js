@@ -1,21 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import { Loading } from '../components'
 
 const ProductImages = ({ images = [{ url: '' }] }) => {
   const [main, setMain] = useState(images[0]);
-  // const [loading, setLoading] = useState(true);
 
   return (
     <Wrapper>
-      {/* <div style={{ display: loading ? "block" : "none" }}>
-        <Loading />
-      </div> */}
-      {/* <div style={{ display: loading ? "none" : "block" }}> */}
-      <img src={main.url} alt='main' className='main'
-      // onLoad={() => setLoading(false)}
-      />
-      {/* </div> */}
+      <img src={main.url} alt='main' className='main' loading='lazy'/>
       <div className='gallery'>
         {images.map((image, index) => {
           return (
@@ -25,6 +16,7 @@ const ProductImages = ({ images = [{ url: '' }] }) => {
               key={index}
               onClick={() => setMain(images[index])}
               className={`${image.url === main.url ? 'active' : null}`}
+              loading='lazy'
             />
           );
         })}

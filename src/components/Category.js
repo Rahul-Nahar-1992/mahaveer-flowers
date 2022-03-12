@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Category = ({ image, name, id }) => {
   return <Wrapper>
     <div className="container">
-      <img src={image} alt={name} />
+      <img src={image} alt={name} loading='lazy'/>
       <Link to={{
         pathname: `/products`,
         state: {categoryId: id}

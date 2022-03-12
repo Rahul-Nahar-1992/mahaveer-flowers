@@ -8,7 +8,7 @@ const ListView = ({ products }) => {
         const { id, image, name, description } = product;
         return (
           <article key={id}>
-            <img src={image} alt={name} />
+            <img src={image} alt={name} loading='lazy'/>
             <div>
               <h4>{name}</h4>
               <p>{description.substring(0, 150)}...</p>

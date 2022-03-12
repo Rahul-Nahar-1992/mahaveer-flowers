@@ -19,7 +19,8 @@ const Contact = () => {
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
-            marginWidth="0">
+            marginWidth="0"
+            loading="lazy">
           </iframe>
         </div>
         <div>
