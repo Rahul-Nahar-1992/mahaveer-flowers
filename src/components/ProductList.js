@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFilterContext } from '../context/filter_context';
 import GridView from './GridView';
 import ListView from './ListView';
@@ -8,12 +8,15 @@ const ProductList = (state, props) => {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 9
 
+  useEffect(() => {
+    state.scrollToTop();
+  }, [currentPage, state])
+
   if (products.length < 1) {
     return <h5 style={{ textTransform: 'none' }}>Sorry, no products matched your search..</h5>;
   }
 
   if (products.length < itemsPerPage && currentPage !== 1) setCurrentPage(1)
-  
 
   const handleClick = (event) => setCurrentPage(Number(event.target.id))
   const handlePrevClick = () => setCurrentPage(currentPage - 1)
