@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Artificial Flower Ladi",
-      "image": "https://i.imgur.com/e9vnoVc.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/2_-_e9vnoVc_t96h4p.jpg"
     },
     {
       "id": 2,
       "name": "Door Set",
-      "image": "https://i.imgur.com/pRWXDLp.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077906/Mahaveer%20Flowers/4_-_pRWXDLp_vrcuvi.jpg"
     },
     {
       "id": 3,
       "name": "Garland",
-      "image": "https://i.imgur.com/6v8vcg1.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077919/Mahaveer%20Flowers/12_-_6v8vcg1_u7gck6.jpg"
     }
   ],
   "products": [
@@ -24,11 +24,11 @@
       "description": "Made from plastic material, used for decoration.",
       "images": [
         {
-          "url": "https://i.imgur.com/e9vnoVc.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/2_-_e9vnoVc_t96h4p.jpg",
           "filename": "GendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/e9vnoVc.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/2_-_e9vnoVc_t96h4p.jpg",
       "featured": true
     },
     {
@@ -38,11 +38,11 @@
       "description": "Made from plastic material, used for decoration.",
       "images": [
         {
-          "url": "https://i.imgur.com/SioQp8F.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/1_-_SioQp8F_kr1t9j.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/SioQp8F.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/1_-_SioQp8F_kr1t9j.jpg",
       "featured": false
     },
     {
@@ -52,11 +52,11 @@
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/57RaRo8.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077922/Mahaveer%20Flowers/6_-_57RaRo8_qwzwb6.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/57RaRo8.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077922/Mahaveer%20Flowers/6_-_57RaRo8_qwzwb6.jpg",
       "featured": true
     },
     {
@@ -66,11 +66,11 @@
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/MXsLmgK.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077920/Mahaveer%20Flowers/7_-_MXsLmgK_ywr2rx.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/MXsLmgK.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077920/Mahaveer%20Flowers/7_-_MXsLmgK_ywr2rx.jpg",
       "featured": false
     },
     {
@@ -80,11 +80,11 @@
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/WCmWmem.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077918/Mahaveer%20Flowers/8_-_WCmWmem_ryzakm.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/WCmWmem.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077918/Mahaveer%20Flowers/8_-_WCmWmem_ryzakm.jpg",
       "featured": false
     },
     {
@@ -94,11 +94,11 @@
       "description": "Made from cloth and plastic material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/pRWXDLp.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077906/Mahaveer%20Flowers/4_-_pRWXDLp_vrcuvi.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/pRWXDLp.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077906/Mahaveer%20Flowers/4_-_pRWXDLp_vrcuvi.jpg",
       "featured": false
     },
     {
@@ -108,11 +108,11 @@
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/UPgGZVX.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077904/Mahaveer%20Flowers/5_-_UPgGZVX_sahl1k.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/UPgGZVX.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077904/Mahaveer%20Flowers/5_-_UPgGZVX_sahl1k.jpg",
       "featured": false
     },
     {
@@ -122,11 +122,11 @@
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
-          "url": "https://i.imgur.com/MqIJj64.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077915/Mahaveer%20Flowers/3_-_MqIJj64_g9diwa.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/MqIJj64.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077915/Mahaveer%20Flowers/3_-_MqIJj64_g9diwa.jpg"
     },
     {
       "id": "9",
@@ -135,11 +135,11 @@
       "description": "Made from cloth and plastic material.",
       "images": [
         {
-          "url": "https://i.imgur.com/6v8vcg1.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077919/Mahaveer%20Flowers/12_-_6v8vcg1_u7gck6.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/6v8vcg1.jpg",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077919/Mahaveer%20Flowers/12_-_6v8vcg1_u7gck6.jpg",
       "featured": true
     },
     {
@@ -149,11 +149,11 @@
       "description": "Made from cloth material.",
       "images": [
         {
-          "url": "https://i.imgur.com/jJgN2JD.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077922/Mahaveer%20Flowers/11_-_jJgN2JD_ydcfjv.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/jJgN2JD.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077922/Mahaveer%20Flowers/11_-_jJgN2JD_ydcfjv.jpg"
     },
     {
       "id": "11",
@@ -162,11 +162,11 @@
       "description": "Made from cloth and plastic material.",
       "images": [
         {
-          "url": "https://i.imgur.com/fV9pMTU.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077914/Mahaveer%20Flowers/10_-_fV9pMTU_vibckt.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/fV9pMTU.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077914/Mahaveer%20Flowers/10_-_fV9pMTU_vibckt.jpg"
     },
     {
       "id": "12",
@@ -175,11 +175,11 @@
       "description": "Made from cloth material.",
       "images": [
         {
-          "url": "https://i.imgur.com/n7uRc4D.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077918/Mahaveer%20Flowers/9_-_n7uRc4D_j9uc08.jpg",
           "filename": "SmallGendaLadi.jpg"
         }
       ],
-      "image": "https://i.imgur.com/n7uRc4D.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077918/Mahaveer%20Flowers/9_-_n7uRc4D_j9uc08.jpg"
     }
   ]
 }

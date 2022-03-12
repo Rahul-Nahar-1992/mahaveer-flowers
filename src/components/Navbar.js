@@ -16,7 +16,7 @@ const Nav = () => {
           <Link to='/'>
             <img src={logo} alt='Mahaveer Flowers' style={{margin: '-1.5rem'}} />
           </Link>
-          <button type='button' className='nav-toggle' onClick={openSidebar}>
+          <button type='button' className='nav-toggle' onClick={openSidebar} aria-label='nav-toggle-button'>
             <FaBars />
           </button>
         </div>

@@ -10,7 +10,7 @@ const Category = ({ image, name, id }) => {
       <Link to={{
         pathname: `/products`,
         state: {categoryId: id}
-      }} className="link">
+      }} className="link" aria-label="category-link">
         <FaSearch />
       </Link>
     </div>
