@@ -7,10 +7,10 @@ const Sort = () => {
   return (
     <Wrapper>
       <div className='btn-container'>
-        <button type='button' className={`${grid_view ? 'active' : null}`} onClick={setGridView}>
+        <button type='button' className={`${grid_view ? 'active' : null}`} onClick={setGridView} aria-label="grid-btn">
           <BsFillGridFill />
         </button>
-        <button type='button' className={`${!grid_view ? 'active' : null}`} onClick={setListView}>
+        <button type='button' className={`${!grid_view ? 'active' : null}`} onClick={setListView} aria-label="list-btn">
           <BsList />
         </button>
       </div>

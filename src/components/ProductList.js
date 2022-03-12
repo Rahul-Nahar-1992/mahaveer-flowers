@@ -37,13 +37,13 @@ const ProductList = (state, props) => {
     return (
       <li className={style}
         key={number}
-        id={number}
+        id={`li-${number}`}
         onClick={handleClick}>
-        <button className='page-link button-link' id={number}>{number}</button></li>
+        <button className='page-link button-link' id={`btn-${number}`}>{number}</button></li>
     )
   })
 
-  let container = grid_view === false ? <ListView products={currentItems} /> : <GridView products={currentItems}>product list</GridView>
+  let container = !grid_view ? <ListView products={currentItems} /> : <GridView products={currentItems}>product list</GridView>
   return <>
     {container}
     {products.length > itemsPerPage &&
