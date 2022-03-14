@@ -8,6 +8,7 @@ const ProductList = (state, props) => {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 9
 
+  console.log(currentPage)
   useEffect(() => {
     state.scrollToTop();
   }, [currentPage, state])
@@ -18,7 +19,7 @@ const ProductList = (state, props) => {
 
   if (products.length < itemsPerPage && currentPage !== 1) setCurrentPage(1)
 
-  const handleClick = (event) => setCurrentPage(Number(event.target.id))
+  const handleClick = (id) => setCurrentPage(id)
   const handlePrevClick = () => setCurrentPage(currentPage - 1)
   const handleNextClick = () => setCurrentPage(currentPage + 1)
 
@@ -38,7 +39,7 @@ const ProductList = (state, props) => {
       <li className={style}
         key={number}
         id={`li-${number}`}
-        onClick={handleClick}>
+        onClick={()=>handleClick(number)}>
         <button className='page-link button-link' id={`btn-${number}`}>{number}</button></li>
     )
   })
