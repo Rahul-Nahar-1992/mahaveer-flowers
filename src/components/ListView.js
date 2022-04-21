@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {LazyImage} from './LazyImage'
 const ListView = ({ products }) => {
   return (
     <Wrapper>
@@ -8,7 +9,7 @@ const ListView = ({ products }) => {
         const { id, image, name, description } = product;
         return (
           <article key={id}>
-            <img src={image} alt={name} loading='lazy'/>
+            <LazyImage src={image} alt={name} loading='lazy'/>
             <div>
               <h4>{name}</h4>
               <p>{description.substring(0, 150)}...</p>

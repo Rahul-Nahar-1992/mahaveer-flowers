@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
-import { FaTimes } from 'react-icons/fa';
 import { links } from '../utils/constants';
 import styled from 'styled-components';
+import Loading from './Loading'
+
+const FaTimes = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaTimes })));
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
@@ -15,7 +17,9 @@ const Sidebar = () => {
         <div className='sidebar-header'>
           <img src={logo} className='logo' alt='Mahaveer Flowers' />
           <button className='close-btn' type='button' onClick={closeSidebar} aria-label='close-btn'>
-            <FaTimes />
+            <Suspense fallback={<Loading />}>
+              <FaTimes />
+            </Suspense>
           </button>
         </div>
         <ul className='links'>

@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react';
 import styled from 'styled-components'
-import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { LazyImage } from './LazyImage'
+import Loading from './Loading'
 
-const Product = ({image, name, price, id}) => {
+const FaSearch = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaSearch })));
+
+const Product = ({ image, name, price, id }) => {
   return <Wrapper>
     <div className="container">
-      <img src={image} alt={name} loading='lazy'/>
+      <LazyImage src={image} alt={name} loading='lazy' />
       <Link to={`/products/${id}`} className="link" aria-label="product-link">
-        <FaSearch />
+        <Suspense fallback={<Loading />}>
+          <FaSearch />
+        </Suspense>
       </Link>
     </div>
 
