@@ -18,6 +18,7 @@ export const LazyImage = (imageProps) => {
   }, [shouldLoad, placeholderRef]);
 
   return (shouldLoad 
+    // eslint-disable-next-line
     ? <img {...imageProps}/> 
     : <div className="img-placeholder" ref={placeholderRef}/>
   );
