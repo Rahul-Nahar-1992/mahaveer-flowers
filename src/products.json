@@ -23,7 +23,7 @@
     {
       "id": 5,
       "name": "Artificial Flower",
-      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747576/Mahaveer%20Flowers/Pink_Wisteria_e0fskp.jpg"
     }
   ],
   "products": [
@@ -381,11 +381,11 @@
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
-          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg",
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747576/Mahaveer%20Flowers/Pink_Wisteria_e0fskp.jpg",
           "filename": "Pink_Wisteria.jpg"
         }
       ],
-      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg"
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747576/Mahaveer%20Flowers/Pink_Wisteria_e0fskp.jpg"
     },
     {
       "id": "28",
@@ -413,6 +413,19 @@
         }
       ],
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Red_Wisteria_jltpre.jpg"
+    },
+    {
+      "id": "30",
+      "name": "Peach Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747578/Mahaveer%20Flowers/Peach_wisteria_yrined.jpg",
+          "filename": "Peach_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747578/Mahaveer%20Flowers/Peach_wisteria_yrined.jpg"
     }
   ]
 }
