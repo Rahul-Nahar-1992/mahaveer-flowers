@@ -8,16 +8,17 @@ const ProductList = (state, props) => {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 9
 
-  console.log(currentPage)
   useEffect(() => {
     state.scrollToTop();
   }, [currentPage, state])
 
+  useEffect(()=>{
+    setCurrentPage(1);
+  }, [products])
+
   if (products.length < 1) {
     return <h5 style={{ textTransform: 'none' }}>Sorry, no products matched your search..</h5>;
   }
-
-  if (products.length < itemsPerPage && currentPage !== 1) setCurrentPage(1)
 
   const handleClick = (id) => setCurrentPage(id)
   const handlePrevClick = () => setCurrentPage(currentPage - 1)

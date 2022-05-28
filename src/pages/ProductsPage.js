@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Filters, ProductList, Sort, PageHero } from '../components';
 import { useLocation } from "react-router-dom";
 import { useFilterContext } from '../context/filter_context';
 
 const ProductsPage = () => {
-  const myRef = useRef(null)
   const location = useLocation();
   const { updateFilters } = useFilterContext();
 
@@ -19,19 +18,17 @@ const ProductsPage = () => {
   }, [])
 
   const scrollToTop = () => {
-    if (myRef.current) {
-      window.scrollTo({
-        left: 0,
-        top: myRef.current.offsetTop,
-        behavior: 'smooth'
-      });
-    }
+    window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   return (
     <main>
       <PageHero title='products' />
-      <Wrapper className='page' ref={myRef}>
+      <Wrapper className='page' >
         <div className='section-center products'>
           <Filters />
           <div>
