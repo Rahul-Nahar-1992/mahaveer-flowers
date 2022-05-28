@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Latakan",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/2_Step_Mango_W_cutting_genda_latkan_ytrj3c.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Artificial Flower",
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg"
     }
   ],
   "products": [
@@ -342,6 +347,72 @@
         }
       ],
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/3_Step_Mango_W_cutting_genda_latkan_apnkwf.jpg"
+    },
+    {
+      "id": "25",
+      "name": "White Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746394/Mahaveer%20Flowers/White_Wisteria_aqqvtn.jpg",
+          "filename": "White_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746394/Mahaveer%20Flowers/White_Wisteria_aqqvtn.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Yellow Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Yellow_Wisteria_ty5x7f.jpg",
+          "filename": "Yellow_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Yellow_Wisteria_ty5x7f.jpg"
+    },
+    {
+      "id": "27",
+      "name": "Pink Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg",
+          "filename": "Pink_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Pink_Wisteria_wg0xu1.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Blue Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Blue_Wisteria_mzfyk6.jpg",
+          "filename": "Blue_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Blue_Wisteria_mzfyk6.jpg",
+      "featured": true
+    },
+    {
+      "id": "29",
+      "name": "Red Wisteria",
+      "categoryId": 5,
+      "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Red_Wisteria_jltpre.jpg",
+          "filename": "Red_Wisteria.jpg"
+        }
+      ],
+      "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Red_Wisteria_jltpre.jpg"
     }
   ]
 }
