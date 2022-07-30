@@ -1,6 +1,5 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import styled from 'styled-components'
-import Loading from './Loading'
 
 const FaInstagram = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaInstagram })));
 const FaWhatsapp = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaWhatsapp })));
@@ -31,21 +30,19 @@ const Contact = () => {
             <h4>contact us via</h4>
             <div className='underline'></div>
           </div>
-          <Suspense fallback={<Loading />}>
-            <ul style={{ listStyleType: 'none', paddingTop: '1rem' }}>
-              <li>
-                <FaWhatsapp />
-                <a href="https://wa.me/917715056121/" target="_blank" rel="noreferrer"> (91) 7715056121</a>
-              </li>
-              <li>
-                <FaInstagram />
-                <a href="https://www.instagram.com/mahaveerflowers/" target="_blank" rel="noreferrer"> Mahaveer Flowers</a>
-              </li>
-              <li>
-                <AiOutlineMail />&nbsp;<a href="mailto:info@mahaveerflowers.in" target="_blank" rel="noreferrer">info@mahaveerflowers.in</a>
-              </li>
-            </ul>
-          </Suspense>
+          <ul style={{ listStyleType: 'none', paddingTop: '1rem' }}>
+            <li>
+              <FaWhatsapp />
+              <a href="https://wa.me/917715056121/" target="_blank" rel="noreferrer"> (91) 7715056121</a>
+            </li>
+            <li>
+              <FaInstagram />
+              <a href="https://www.instagram.com/mahaveerflowers/" target="_blank" rel="noreferrer"> Mahaveer Flowers</a>
+            </li>
+            <li>
+              <AiOutlineMail />&nbsp;<a href="mailto:info@mahaveerflowers.in" target="_blank" rel="noreferrer">info@mahaveerflowers.in</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,10 +1,9 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import styled from 'styled-components';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { links } from '../utils/constants';
 import { useProductsContext } from '../context/products_context';
-import Loading from './Loading'
 
 const FaBars = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaBars })));
 
@@ -19,9 +18,7 @@ const Nav = () => {
             <img src={logo} alt='Mahaveer Flowers' style={{ margin: '-1.5rem' }} />
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar} aria-label='nav-toggle-button'>
-            <Suspense fallback={<Loading />}>
-              <FaBars />
-            </Suspense>
+            <FaBars />
           </button>
         </div>
         <ul className='nav-links'>

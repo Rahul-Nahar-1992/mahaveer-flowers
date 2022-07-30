@@ -1,7 +1,6 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import { useFilterContext } from '../context/filter_context';
 import styled from 'styled-components';
-import Loading from './Loading'
 
 const BsFillGridFill = lazy(() => import('react-icons/bs').then(module => ({ default: module.BsFillGridFill })));
 const BsList = lazy(() => import('react-icons/bs').then(module => ({ default: module.BsList })));
@@ -11,14 +10,12 @@ const Sort = () => {
   return (
     <Wrapper>
       <div className='btn-container'>
-        <Suspense fallback={<Loading />}>
-          <button type='button' className={`${grid_view ? 'active' : null}`} onClick={setGridView} aria-label="grid-btn">
-            <BsFillGridFill />
-          </button>
-          <button type='button' className={`${!grid_view ? 'active' : null}`} onClick={setListView} aria-label="list-btn">
-            <BsList />
-          </button>
-        </Suspense>
+        <button type='button' className={`${grid_view ? 'active' : null}`} onClick={setGridView} aria-label="grid-btn">
+          <BsFillGridFill />
+        </button>
+        <button type='button' className={`${!grid_view ? 'active' : null}`} onClick={setListView} aria-label="list-btn">
+          <BsList />
+        </button>
       </div>
       <p>{products.length} products found</p>
       <hr />

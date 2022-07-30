@@ -1,8 +1,7 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { LazyImage } from './LazyImage'
-import Loading from './Loading'
 
 const FaSearch = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaSearch })));
 
@@ -11,9 +10,7 @@ const Product = ({ image, name, price, id }) => {
     <div className="container">
       <LazyImage src={image} alt={name} loading='lazy' />
       <Link to={`/products/${id}`} className="link" aria-label="product-link">
-        <Suspense fallback={<Loading />}>
-          <FaSearch />
-        </Suspense>
+        <FaSearch />
       </Link>
     </div>
 

@@ -1,36 +1,36 @@
 {
   "category": [
     {
-      "id": 1,
+      "id": "MH1",
       "name": "Artificial Flower Ladi",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077924/Mahaveer%20Flowers/2_-_e9vnoVc_t96h4p.jpg"
     },
     {
-      "id": 2,
+      "id": "MH2",
       "name": "Door Set",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077906/Mahaveer%20Flowers/4_-_pRWXDLp_vrcuvi.jpg"
     },
     {
-      "id": 3,
+      "id": "MH3",
       "name": "Garland",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077919/Mahaveer%20Flowers/12_-_6v8vcg1_u7gck6.jpg"
     },
     {
-      "id": 4,
+      "id": "MH4",
       "name": "Latakan",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/2_Step_Mango_W_cutting_genda_latkan_ytrj3c.jpg"
     },
     {
-      "id": 5,
+      "id": "MH5",
       "name": "Artificial Flower",
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747576/Mahaveer%20Flowers/Pink_Wisteria_e0fskp.jpg"
     }
   ],
   "products": [
     {
-      "id": "1",
+      "id": "MH0001",
       "name": "Genda Ladi",
-      "categoryId": 1,
+      "categoryId": "MH1",
       "description": "Made from plastic material, used for decoration.",
       "images": [
         {
@@ -42,9 +42,9 @@
       "featured": true
     },
     {
-      "id": "2",
+      "id": "MH0002",
       "name": "Small Genda Ladi",
-      "categoryId": 1,
+      "categoryId": "MH1",
       "description": "Made from plastic material, used for decoration.",
       "images": [
         {
@@ -56,9 +56,9 @@
       "featured": false
     },
     {
-      "id": "3",
+      "id": "MH0003",
       "name": "W Cutting Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
@@ -70,9 +70,9 @@
       "featured": true
     },
     {
-      "id": "4",
+      "id": "MH0004",
       "name": "Diamond Cutting Small Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
@@ -84,9 +84,9 @@
       "featured": false
     },
     {
-      "id": "5",
+      "id": "MH0005",
       "name": "Diamond Cutting Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
@@ -98,9 +98,9 @@
       "featured": false
     },
     {
-      "id": "6",
+      "id": "MH0006",
       "name": "Chakra Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth and plastic material, used for decorating door and other place.",
       "images": [
         {
@@ -112,9 +112,9 @@
       "featured": false
     },
     {
-      "id": "7",
+      "id": "MH0007",
       "name": "Round Cutting Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
@@ -126,9 +126,9 @@
       "featured": false
     },
     {
-      "id": "8",
+      "id": "MH0008",
       "name": "W Star Cutting Set",
-      "categoryId": 2,
+      "categoryId": "MH2",
       "description": "Made from cloth material, used for decorating door and other place.",
       "images": [
         {
@@ -139,9 +139,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077915/Mahaveer%20Flowers/3_-_MqIJj64_g9diwa.jpg"
     },
     {
-      "id": "9",
+      "id": "MH0009",
       "name": "4/4 W Cutting Garland",
-      "categoryId": 3,
+      "categoryId": "MH3",
       "description": "Made from cloth and plastic material.",
       "images": [
         {
@@ -153,9 +153,9 @@
       "featured": true
     },
     {
-      "id": "10",
+      "id": "MH0010",
       "name": "Diamond Cutting Garland",
-      "categoryId": 3,
+      "categoryId": "MH3",
       "description": "Made from cloth material.",
       "images": [
         {
@@ -166,9 +166,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077922/Mahaveer%20Flowers/11_-_jJgN2JD_ydcfjv.jpg"
     },
     {
-      "id": "11",
+      "id": "MH0011",
       "name": "Chakra Garland",
-      "categoryId": 3,
+      "categoryId": "MH3",
       "description": "Made from cloth and plastic material.",
       "images": [
         {
@@ -179,9 +179,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077914/Mahaveer%20Flowers/10_-_fV9pMTU_vibckt.jpg"
     },
     {
-      "id": "12",
+      "id": "MH0012",
       "name": "W Cutting Plain Garland",
-      "categoryId": 3,
+      "categoryId": "MH3",
       "description": "Made from cloth material.",
       "images": [
         {
@@ -192,9 +192,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1647077918/Mahaveer%20Flowers/9_-_n7uRc4D_j9uc08.jpg"
     },
     {
-      "id": "13",
+      "id": "MH0013",
       "name": "White Lotus Latakan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material with a lotus at the end, useful for decorations.",
       "images": [
         {
@@ -205,9 +205,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/White_Lotus_latkan_ocnayo.jpg"
     },
     {
-      "id": "14",
+      "id": "MH0014",
       "name": "Yellow Lotus Latakan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material with a lotus at the end, useful for decorations.",
       "images": [
         {
@@ -218,9 +218,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/Yellow_Lotus_Latkan_tzco4z.jpg"
     },
     {
-      "id": "15",
+      "id": "MH0015",
       "name": "Orange Lotus Latakan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material with a lotus at the end, useful for decorations.",
       "images": [
         {
@@ -231,9 +231,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/Orange_Lotus_latkan_ve8d1s.jpg"
     },
     {
-      "id": "16",
+      "id": "MH0016",
       "name": "1 Step Yellow W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -244,9 +244,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/1_Step_Yellow_W_cutting_genda_latkan_volz8f.jpg"
     },
     {
-      "id": "17",
+      "id": "MH0017",
       "name": "1 Step Orange W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -257,9 +257,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/1_Step_Orange_W_cutting_genda_latkan_qtwx7e.jpg"
     },
     {
-      "id": "18",
+      "id": "MH0018",
       "name": "1 Step Mango W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -270,9 +270,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/1_Step_Mango_W_cutting_genda_latkan_qlodxv.jpg"
     },
     {
-      "id": "19",
+      "id": "MH0019",
       "name": "2 Step Yellow W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -284,9 +284,9 @@
       "featured": true
     },
     {
-      "id": "20",
+      "id": "MH0020",
       "name": "2 Step Orange W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -297,9 +297,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/2_Step_Orange_W_cutting_genda_latkan_gnhl2l.jpg"
     },
     {
-      "id": "21",
+      "id": "MH0021",
       "name": "2 Step Mango W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -310,9 +310,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736408/Mahaveer%20Flowers/2_Step_Mango_W_cutting_genda_latkan_ytrj3c.jpg"
     },
     {
-      "id": "22",
+      "id": "MH0022",
       "name": "3 Step Yellow W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -323,9 +323,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/3_Step_Yello_W_cutting_genda_latkan_fwzs4e.jpg"
     },
     {
-      "id": "23",
+      "id": "MH0023",
       "name": "3 Step Orange W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -336,9 +336,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/3_Step_Orange_W_cutting_genda_latkan_cozgkz.jpg"
     },
     {
-      "id": "24",
+      "id": "MH0024",
       "name": "3 Step Mango W Cutting Genda Latkan",
-      "categoryId": 4,
+      "categoryId": "MH4",
       "description": "Made from cloth material along with marigold flower to enhance the beauty.",
       "images": [
         {
@@ -349,9 +349,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653736409/Mahaveer%20Flowers/3_Step_Mango_W_cutting_genda_latkan_apnkwf.jpg"
     },
     {
-      "id": "25",
+      "id": "MH0025",
       "name": "White Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
@@ -362,9 +362,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746394/Mahaveer%20Flowers/White_Wisteria_aqqvtn.jpg"
     },
     {
-      "id": "26",
+      "id": "MH0026",
       "name": "Yellow Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
@@ -375,9 +375,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746399/Mahaveer%20Flowers/Yellow_Wisteria_ty5x7f.jpg"
     },
     {
-      "id": "27",
+      "id": "MH0027",
       "name": "Pink Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
@@ -388,9 +388,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653747576/Mahaveer%20Flowers/Pink_Wisteria_e0fskp.jpg"
     },
     {
-      "id": "28",
+      "id": "MH0028",
       "name": "Blue Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
@@ -402,9 +402,9 @@
       "featured": true
     },
     {
-      "id": "29",
+      "id": "MH0029",
       "name": "Red Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {
@@ -415,9 +415,9 @@
       "image": "https://res.cloudinary.com/dczd8msfk/image/upload/v1653746398/Mahaveer%20Flowers/Red_Wisteria_jltpre.jpg"
     },
     {
-      "id": "30",
+      "id": "MH0030",
       "name": "Peach Wisteria",
-      "categoryId": 5,
+      "categoryId": "MH5",
       "description": "The flowers are made up of high quality polyester fabric and the leaves are made of plastic.",
       "images": [
         {

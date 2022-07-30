@@ -1,7 +1,6 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Loading from './Loading'
 
 const FaSearch = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaSearch })));
 
@@ -13,9 +12,7 @@ const Category = ({ image, name, id }) => {
         pathname: `/products`,
         state: { categoryId: id }
       }} className="link" aria-label="category-link">
-        <Suspense fallback={<Loading />}>
           <FaSearch />
-        </Suspense>
       </Link>
     </div>
 
