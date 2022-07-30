@@ -1,18 +1,15 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
-const FaSearch = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaSearch })));
 
 const Category = ({ image, name, id }) => {
   return <Wrapper>
     <div className="container">
-      <img src={image} alt={name} loading='lazy' />
       <Link to={{
         pathname: `/products`,
         state: { categoryId: id }
-      }} className="link" aria-label="category-link">
-          <FaSearch />
+      }}>
+        <img src={image} alt={name} loading='lazy' />
       </Link>
     </div>
 

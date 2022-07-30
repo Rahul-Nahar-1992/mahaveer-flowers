@@ -1,23 +1,20 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { LazyImage } from './LazyImage'
 
-const FaSearch = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaSearch })));
-
 const Product = ({ image, name, price, id }) => {
   return <Wrapper>
     <div className="container">
-      <LazyImage src={image} alt={name} loading='lazy' />
-      <Link to={`/products/${id}`} className="link" aria-label="product-link">
-        <FaSearch />
+      <Link to={`/products/${id}`}>
+        <LazyImage src={image} alt={name} loading='lazy' />
       </Link>
     </div>
 
     <footer>
       <h5>{name}</h5>
     </footer>
-  </Wrapper>
+  </Wrapper >
 }
 
 const Wrapper = styled.article`
