@@ -1,4 +1,5 @@
 import React from 'react';
+import { sampleSize } from 'lodash';
 import { useProductsContext } from '../context/products_context';
 import styled from 'styled-components';
 import Error from './Error';
@@ -7,7 +8,8 @@ import Product from './Product';
 
 const RelatedProducts = () => {
   const { related_products_loading: loading, related_products_error: error, related_products: related } = useProductsContext();
-  
+  const relatedProducts = sampleSize(related, 3);
+
   if (loading) {
     return <Loading />;
   }
@@ -20,6 +22,7 @@ const RelatedProducts = () => {
     return <></>;
   }
 
+
   return (
     <Wrapper className='section'>
       <div className='title'>
@@ -27,7 +30,7 @@ const RelatedProducts = () => {
         <div className='underline'></div>
       </div>
       <div className='section-center featured'>
-        {related.slice(0, 3).map((product) => {
+        {relatedProducts.map((product) => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
