@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { useProductsContext } from '../context/products_context';
 import { Loading, Error, ProductImages, PageHero, RelatedProducts } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
+const FaWhatsapp = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaWhatsapp })));
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -33,6 +35,7 @@ const SingleProductPage = () => {
   }
 
   const { name, description, id: sku, images } = product;
+  const whatsappMsg = "https://wa.me/917715056121/?text=What%20is%20the%20price%20of%20" + name + "( " + sku + " )";
 
   return (
     <Wrapper>
@@ -51,6 +54,10 @@ const SingleProductPage = () => {
             <p className='info'>
               <span>SKU : </span>
               {sku}
+            </p>
+            <p className='info'>
+              <span>Price : </span>
+              <a href={whatsappMsg} target="_blank" rel="noreferrer"> Contact us via <FaWhatsapp /> </a>
             </p>
             <hr />
           </section>
