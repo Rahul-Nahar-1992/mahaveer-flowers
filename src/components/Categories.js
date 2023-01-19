@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
         <div className='underline'></div>
       </div>
       <div className='section-center featured'>
-        {categories.slice(0, 6).map((product) => {
+        {categories.map((product) => {
           return <Category key={product.id} {...product} />;
         })}
       </div>

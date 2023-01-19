@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer } from 'react'
+import React, { useContext, useEffect, useReducer, useState } from 'react'
 import reducer from '../reducers/products_reducer'
 import axios from 'axios'
 import data from '../products.json'
@@ -20,6 +20,7 @@ import {
   GET_RELATED_PRODUCT_ERROR,
   GET_RELATED_PRODUCT_SUCCESS
 } from '../actions'
+import { Loading } from '../components'
 
 const initialState = {
   isSidebarOpen: false,
@@ -41,19 +42,19 @@ const initialState = {
 const ProductsContext = React.createContext()
 
 export const ProductsProvider = ({ children }) => {
-  
+  const [loading, setLoading] = useState(true)
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const openSidebar = () => {
-    dispatch({type: SIDEBAR_OPEN})
+    dispatch({ type: SIDEBAR_OPEN })
   }
   const closeSidebar = () => {
-    dispatch({type: SIDEBAR_CLOSE})
+    dispatch({ type: SIDEBAR_CLOSE })
   }
 
   const fetchProducts = async () => {
     dispatch({ type: GET_PRODUCTS_BEGIN })
-    
+
     try {
       const { data: data1 } = await axios.get(
         `https://api.srimahaveerflowers.in/api/products`
@@ -79,7 +80,7 @@ export const ProductsProvider = ({ children }) => {
 
   const fetchCategories = async () => {
     dispatch({ type: GET_CATALOGS_BEGIN })
-    
+
     try {
       const { data: data1 } = await axios.get(
         `https://api.srimahaveerflowers.in/api/category`
@@ -96,18 +97,7 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
 
     try {
-      let singleProduct = state.products.find(i => i.id === id.toString());
-
-      if (!singleProduct) {
-        const { data: data1 } = await axios.get(`https://api.srimahaveerflowers.in/api/products/${id}`)
-        singleProduct = {
-          categoryId: data1.category,
-          id: data1.product_id,
-          name: data1.name,
-          images: data1.image,
-          image: data1.image[0].url
-        }
-      }
+      const singleProduct = state.products.find(i => i.id === id.toString());
 
       await fetchRelatedProducts(singleProduct.categoryId, singleProduct.id);
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
@@ -130,12 +120,16 @@ export const ProductsProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    fetchProducts();
-    fetchCategories();
+    async function fetchData() {
+      await Promise.all([fetchProducts(), fetchCategories()])
+      setLoading(false)
+    }
+    fetchData();
   }, [])
 
+  if (loading) return <Loading />
   return (
-    <ProductsContext.Provider value={{...state, openSidebar, closeSidebar, fetchSingleProduct }}>
+    <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar, fetchSingleProduct }}>
       {children}
     </ProductsContext.Provider>
   )
