@@ -12,7 +12,7 @@ const ListView = ({ products }) => {
             <LazyImage src={image} alt={name} loading='lazy' />
             <div>
               <h4>{name}</h4>
-              <p>{description.substring(0, 150)}...</p>
+              <p>{description && description.substring(0, 150)}...</p>
               <Link to={`/products/${id}`} className='btn'>
                 Details
               </Link>

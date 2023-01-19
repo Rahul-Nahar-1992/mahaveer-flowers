@@ -67,7 +67,8 @@ export const ProductsProvider = ({ children }) => {
           id: item.product_id,
           name: item.name,
           images: item.image,
-          image: item.image[0].url
+          image: item.image[0].url,
+          description: item.description
         })
         ))
       ]
