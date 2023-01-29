@@ -30,7 +30,7 @@ const ProductList = (state, props) => {
 
   // Logic for displaying page numbers
   const pageNumbers = []
-  for (let i = 1; i <= Math.ceil(products.length / itemsPerPage); i++) {
+  for (let i = Math.max(1, currentPage - 2); i <= Math.min(Math.ceil(products.length / itemsPerPage), currentPage + 2); i++) {
     pageNumbers.push(i)
   }
 
