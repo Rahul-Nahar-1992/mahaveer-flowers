@@ -5,13 +5,17 @@ const FaInstagram = lazy(() => import('react-icons/fa').then(module => ({ defaul
 const FaWhatsapp = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaWhatsapp })));
 const AiOutlineMail = lazy(() => import('react-icons/ai').then(module => ({ default: module.AiOutlineMail })));
 
-const Contact = () => {
+const Contact = (heading) => {
   return <Wrapper>
     <div className="section-center">
-      <div className='title'>
-        <h2>meet us</h2>
-        <div className='underline'></div>
-      </div>
+      {
+        heading === true ?
+          <div className='title'>
+            <h2>meet us</h2>
+            <div className='underline'></div>
+          </div> :
+          <></>
+      }
       <div className="contact">
         <div>
           <iframe

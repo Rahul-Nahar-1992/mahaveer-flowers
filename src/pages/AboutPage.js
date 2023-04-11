@@ -14,17 +14,19 @@ const AboutPage = () => {
           <div className="underline"></div>
         </div>
         <p>
-          Artificial flowers offer a permanent sustainable source of beauty. We believe the joy of nature should never fade.
-          We import premium quality products made of materials such as silk, natural woods, Polyurethane (PU) and a unique blend of fabrics ensuring both durability and quality.
+          Welcome to our website for artificial flowers! We are committed to supplying high-quality, gorgeous flowers to complement any setting.
         </p>
         <p>
-          We believe in revamping our product mix from time to time ensuring better designs and abstain from monotony.
-          Therefore, we always have some surprises in store for our customers and give them something to look forward to every few months.
-          We maintain exclusivity by getting products custom made from factories conforming to the highest quality standards and greater consumer satisfaction.
-          </p>
+          Our team is deeply committed to bringing nature indoors and making it available to everyone, regardless of location or lifestyle. We think that artificial flowers may provide the same aesthetic appeal and mood as genuine flowers without the bother and upkeep that live plants require.
+        </p>
         <p>
-          We try and stick to our main agenda which is to provide customers with a great experience by offering top quality, long lasting products and at the same time bring them closer to nature by providing real looking flowers and plants which are personally handpicked from multiple cities across borders.
-          We believe in pushing ourselves beyond our limits and are in the lookout for the best quality of floral decor from across the globe to fulfil the growing demand for lifestyle products in our country.
+          We obtain our items from the most recognized manufacturers (except for a few which we manufacturer ourselves) and designers, guaranteeing that each bloom is handcrafted with care and dedication to quality. Our collection includes everything from classic and timeless items to current and fashionable arrangements, helping our clients to discover the right fit for their personal style and preferences.
+        </p>
+        <p>
+          We value customer happiness and endeavor to create a seamless buying experience on our artificial flower website. Our website is user-friendly and simple to use, with thorough product descriptions and photographs that highlight the distinctive characteristics of each flower. We also provide dependable shipping and a no-hassle return policy, allowing our clients to order with confidence.
+        </p>
+        <p>
+          Thank you for taking the time to look at our artificial flower website for your floral requirements. With our wonderful variety of flowers, we strive to provide a touch of beauty and elegance to your home or business.
         </p>
       </article>
     </Wrapper>

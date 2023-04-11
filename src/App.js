@@ -7,6 +7,7 @@ const Home = lazy(() => import('./pages/HomePage'));
 const SingleProduct = lazy(() => import('./pages/SingleProductPage'));
 const Error = lazy(() => import('./pages/ErrorPage'));
 const About = lazy(() => import('./pages/AboutPage'));
+const ContactUsPage = lazy(() => import('./pages/ContactUs'));
 const Products = lazy(() => import('./pages/ProductsPage'));
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path='/about'>
             <About />
+          </Route>
+          <Route exact path='/contact-us'>
+            <ContactUsPage />
           </Route>
           <Route exact path='/products'>
             <Products />
