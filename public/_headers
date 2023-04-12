@@ -5,7 +5,9 @@
   X-XSS-Protection: 1; mode=block
 
 /*.js
-  cache-control = "public, max-age=86400"
+  cache-control: public
+  cache-control: max-age=86400
 
 /*.css
-  cache-control = "public, max-age=86400"
+  cache-control: public
+  cache-control: max-age=86400
