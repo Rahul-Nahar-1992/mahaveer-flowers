@@ -1,9 +1,9 @@
 [[headers]]
-  for = "*.js" # js files should be set this way
+  for = "/*.js" # js files should be set this way
   [headers.values]
     Cache-Control = "public, max-age=86400"
 [[headers]]
-  for = "*.css" # css files too
+  for = "/*.css" # css files too
   [headers.values]
     Cache-Control = "public, max-age=86400"
 [[headers]]
