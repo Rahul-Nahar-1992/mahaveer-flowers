@@ -10,7 +10,7 @@ const AboutPage = () => {
       <img src={stageDecor} alt="stage decor" loading='lazy' />
       <article>
         <div className="title">
-          <h2>our story</h2>
+          <h1>our story</h1>
           <div className="underline"></div>
         </div>
         <p>

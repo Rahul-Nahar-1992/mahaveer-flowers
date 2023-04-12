@@ -47,7 +47,7 @@ const SingleProductPage = () => {
         <div className='product-center'>
           <ProductImages images={images} />
           <section className='content'>
-            <h2>{name}</h2>
+            <h1>{name}</h1>
             {/* <h5 className='price'>Please contact</h5> */}
             <p className='desc'>{description}</p>
 

@@ -11,7 +11,7 @@ const Contact = (heading) => {
       {
         heading === true ?
           <div className='title'>
-            <h2>meet us</h2>
+            <h1>meet us</h1>
             <div className='underline'></div>
           </div> :
           <></>
@@ -59,7 +59,7 @@ const Wrapper = styled.section`
     line-height: 2;
     max-width: 45em;
   }
-  h2 {
+  h1 {
     text-transform: capitalize;
   }
   .contact {

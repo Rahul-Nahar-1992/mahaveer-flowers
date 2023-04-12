@@ -26,7 +26,7 @@ const RelatedProducts = () => {
   return (
     <Wrapper className='section'>
       <div className='title'>
-        <h2>related products</h2>
+        <h1>related products</h1>
         <div className='underline'></div>
       </div>
       <div className='section-center featured'>
