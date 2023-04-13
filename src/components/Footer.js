@@ -51,11 +51,14 @@ const Wrapper = styled.footer`
   }
   h6 {
     color: var(--clr-white);
-    margin: 0.1rem;
+    margin: 0.5rem;
 
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;
+    a {
+      color: var(--clr-primary-5);
+    }
   }
 `
 
