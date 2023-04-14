@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navbar, Sidebar, Footer, Loading } from './components';
 import ScrollToTop from './components/ScrollToTop';
+import OurWorkPage from './pages/OurWorkPage';
 
 const Home = lazy(() => import('./pages/HomePage'));
 const SingleProduct = lazy(() => import('./pages/SingleProductPage'));
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route exact path='/legal/terms-of-use'>
             <DisclaimerPage />
+          </Route>
+          <Route exact path='/our-work'>
+            <OurWorkPage />
           </Route>
           <Route exact path='/products'>
             <Products />

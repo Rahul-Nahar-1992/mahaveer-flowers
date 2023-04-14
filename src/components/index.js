@@ -1,4 +1,5 @@
 import FeaturedProducts from './FeaturedProducts'
+import FeaturedVideos from './FeaturedVideos'
 import Categories from './Categories'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -16,6 +17,7 @@ import RelatedProducts from './RelatedProducts'
 
 export {
   FeaturedProducts,
+  FeaturedVideos,
   Navbar,
   Footer,
   Sidebar,

@@ -1,0 +1,54 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { videoLink } from '../../src/utils/constants'
+
+const FeaturedVideos = () => {
+  return (
+    <Wrapper className='section'>
+      <div className='title'>
+        <h1>featured videos</h1>
+        <div className='underline'></div>
+      </div>
+      <div className='section-center featured'>
+        {
+            videoLink.slice(0, 2).map((item, i) => (
+                <>{item.link}</>
+            ))
+          }
+      </div>
+      <Link to='/our-work' className='btn'>
+        all videos
+      </Link>
+    </Wrapper>
+  );
+};
+
+const Wrapper = styled.section`
+  background: var(--clr-grey-10);
+  .featured {
+    margin: 4rem auto;
+    display: grid;
+    gap: 2.5rem;
+    justify-items: center;
+    iframe {
+      height: 20rem;
+      width: 35rem;
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  .btn {
+    display: block;
+    width: 148px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media (min-width: 576px) {
+    .featured {
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+  }
+`;
+
+export default FeaturedVideos;

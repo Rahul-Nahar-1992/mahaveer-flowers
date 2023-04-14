@@ -53,7 +53,6 @@ const Contact = (heading) => {
   </Wrapper >
 }
 const Wrapper = styled.section`
-  background: var(--clr-grey-10);
   padding: 5rem 0;
   p {
     line-height: 2;

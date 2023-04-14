@@ -20,3 +20,12 @@ export const links = [
     url: '/contact-us',
   }
 ]
+
+export const videoLink = [
+  {
+    link: <iframe src="https://www.youtube.com/embed/FFiVWrkA_G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  },
+  {
+    link: <iframe src="https://www.youtube.com/embed/lmjPsMSyxQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  }
+]
