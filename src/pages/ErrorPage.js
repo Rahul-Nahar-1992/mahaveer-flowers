@@ -8,7 +8,6 @@ const ErrorPage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Error</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/*" />
     </Helmet>
     <section>
       <h1>404</h1>
