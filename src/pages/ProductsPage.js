@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Filters, ProductList, Sort, PageHero } from '../components';
 import { useLocation } from "react-router-dom";
 import { useFilterContext } from '../context/filter_context';
+import { Helmet } from 'react-helmet';
 
 const ProductsPage = () => {
   const location = useLocation();
@@ -27,6 +28,11 @@ const ProductsPage = () => {
 
   return (
     <main>
+      <Helmet>
+      <meta charSet="utf-8" />
+      <title>Products</title>
+      <link rel="canonical" href="https://mahaveerflowers.in/products" />
+    </Helmet>
       <PageHero title='products' />
       <Wrapper className='page' >
         <div className='section-center products'>

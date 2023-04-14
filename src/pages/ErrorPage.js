@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+
 const ErrorPage = () => {
   return <Wrapper className="page-100">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Error</title>
+      <link rel="canonical" href="https://mahaveerflowers.in/*" />
+    </Helmet>
     <section>
       <h1>404</h1>
       <h3>sorry, the page cannot be found</h3>

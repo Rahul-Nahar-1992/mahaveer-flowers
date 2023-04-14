@@ -4,6 +4,7 @@ import { useProductsContext } from '../context/products_context';
 import { Loading, Error, ProductImages, PageHero, RelatedProducts } from '../components';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const FaWhatsapp = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaWhatsapp })));
 
@@ -39,6 +40,11 @@ const SingleProductPage = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{id} - {name}</title>
+        <link rel="canonical" href={`https://mahaveerflowers.in/products/${id}`} />
+      </Helmet>
       <PageHero title={name} product />
       <div className='section section-center page'>
         <Link to='/products' className='btn'>

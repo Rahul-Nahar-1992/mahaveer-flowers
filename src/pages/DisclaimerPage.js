@@ -2,9 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
 import stageDecor from '../assets/stageDecor.jpg'
+import { Helmet } from 'react-helmet'
 
 const DisclaimerPage = () => {
   return <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Terms & Conditions</title>
+      <link rel="canonical" href="https://mahaveerflowers.in/legal/terms-of-use" />
+    </Helmet>
     <PageHero title="Disclaimer" />
     <Wrapper className="page section section-center">
       <img src={stageDecor} alt="stage decor" loading='lazy' />

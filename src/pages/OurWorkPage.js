@@ -2,9 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
 import { videoLink } from '../../src/utils/constants'
+import { Helmet } from 'react-helmet'
 
 const OurWorkPage = () => {
   return <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Our Work</title>
+      <link rel="canonical" href="https://mahaveerflowers.in/our-work" />
+    </Helmet>
     <PageHero title="our work" />
     <Wrapper className="page section section-center">
       <article class="ourWork">
