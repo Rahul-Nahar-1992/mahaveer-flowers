@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Loading = () => {
-  return <div className="section section-center">
-    <div className="loading"></div>
+  return <div className="loading">
+    <div className="dot"></div>
+    <div className="dot2"></div>
   </div>
 }
 
