@@ -7,7 +7,7 @@ const HomePage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Mahaveer Flowers | Buy Artificial Flowers Online in India</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/" />
     </Helmet>
     <Hero />
     <Categories />

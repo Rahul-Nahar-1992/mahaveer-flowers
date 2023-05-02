@@ -31,7 +31,7 @@ const ProductsPage = () => {
       <Helmet>
       <meta charSet="utf-8" />
       <title>Products</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/products" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/products" />
     </Helmet>
       <PageHero title='products' />
       <Wrapper className='page' >

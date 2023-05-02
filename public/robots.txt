@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mahaveerflowers.in/sitemap.xml
+Sitemap: https://www.mahaveerflowers.in/sitemap.xml

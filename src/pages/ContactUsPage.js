@@ -7,7 +7,7 @@ const ContactUsPage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Contact Us</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/contact-us" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/contact-us" />
     </Helmet>
     <PageHero title="contact us" />
       <Contact heading={false}/>

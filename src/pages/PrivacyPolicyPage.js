@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Privacy Policy</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/privacy" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/privacy" />
     </Helmet>
     <PageHero title="privacy policy" />
     <Wrapper className="page section section-center">

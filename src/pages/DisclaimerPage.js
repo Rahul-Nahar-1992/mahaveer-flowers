@@ -9,7 +9,7 @@ const DisclaimerPage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Terms & Conditions</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/legal/terms-of-use" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/legal/terms-of-use" />
     </Helmet>
     <PageHero title="Disclaimer" />
     <Wrapper className="page section section-center">

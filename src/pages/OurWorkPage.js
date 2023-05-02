@@ -9,7 +9,7 @@ const OurWorkPage = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Our Work</title>
-      <link rel="canonical" href="https://mahaveerflowers.in/our-work" />
+      <link rel="canonical" href="https://www.mahaveerflowers.in/our-work" />
     </Helmet>
     <PageHero title="our work" />
     <Wrapper className="page section section-center">
