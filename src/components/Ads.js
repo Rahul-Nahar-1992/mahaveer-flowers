@@ -8,7 +8,7 @@ export const Ads = () => {
   return (
     <div className='ad'>
       <ins className='adsbygoogle'
-        style={{ display: 'block' }}
+        style={{ display: 'inline-block', width: '728px', height: '90px' }}
         data-ad-client='ca-pub-5785569447311216'
         data-ad-slot='2509254784'
         data-ad-format='auto'
