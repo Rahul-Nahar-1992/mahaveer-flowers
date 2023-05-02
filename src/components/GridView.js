@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Product from './Product';
+import { Ads } from './Ads';
 
 const GridView = ({ products }) => {
   return (
     <Wrapper>
+      <Ads />
       <div className='products-container'>
         {products.map((product) => {
           return <Product key={product.id} {...product} />;
