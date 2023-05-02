@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import AdSense from 'react-adsense'
 
 export const Ads = () => {
-  useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, [])
-
   return (
-    <div className='ad'>
-      <ins className='adsbygoogle'
-        style={{ display: 'inline-block', width: '728px', height: '90px' }}
-        data-ad-client='ca-pub-5785569447311216'
-        data-ad-slot='2509254784'
-        data-ad-format='auto'
-        data-full-width-responsive='true' />
-    </div>
+    <AdSense.Google
+      client='ca-pub-5785569447311216'
+      slot='2509254784'
+      style={{ display: 'inline-block', width: '728px', height: '90px' }}
+    />
   );
 }
