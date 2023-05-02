@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useFilterContext } from '../context/filter_context';
 import GridView from './GridView';
 import ListView from './ListView';
-import { Ads } from './Ads';
 
 const ProductList = (state, props) => {
   const { filtered_products: products, grid_view } = useFilterContext();
@@ -48,7 +47,6 @@ const ProductList = (state, props) => {
 
   let container = !grid_view ? <ListView products={currentItems} /> : <GridView products={currentItems}>product list</GridView>
   return <>
-    <Ads />
     {container}
     {products.length > itemsPerPage &&
       <div style={{ marginTop: '2rem' }}>
