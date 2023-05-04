@@ -6,9 +6,11 @@ export const Ads = () => {
   }, [])
 
   return (
-    <ins className="adsbygoogle"
-      style={{ display: 'block' }}
-      data-ad-client="ca-pub-5785569447311216"
-      data-ad-slot="2831159739"></ins>
+    window.adsbygoogle ?
+      (<ins className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-5785569447311216"
+        data-ad-slot="2831159739"></ins>)
+      : <></>
   );
 }
