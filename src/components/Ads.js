@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Ads = () => {
+  const [googleAdLoaded, setGoogleAdLoaded] = useState(false)
+
   useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if (window.adsbygoogle && window.adsbygoogle.loaded) {
+      setGoogleAdLoaded(true)
+    }
   }, [window.adsbygoogle])
 
   return (
-    window.adsbygoogle ?
+    googleAdLoaded ?
       (<ins className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-client="ca-pub-5785569447311216"
