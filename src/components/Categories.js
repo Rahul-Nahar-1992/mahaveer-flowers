@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
         <h1>categories</h1>
         <div className='underline'></div>
       </div>
-      <div className='section-center featured'>
+      <div className='section-center featured' style={{justifyItems: 'center'}}>
         <Ads />
         {categories.map((category) => {
           return <Category key={category.id} {...category} />;

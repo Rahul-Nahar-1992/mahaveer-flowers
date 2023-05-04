@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 export const Ads = () => {
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, [])
+  }, [window.adsbygoogle])
 
   return (
     window.adsbygoogle ?
