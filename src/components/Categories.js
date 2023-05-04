@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
         <h1>categories</h1>
         <div className='underline'></div>
       </div>
-      <div className='section-center featured' style={{justifyItems: 'center'}}>
+      <div className='section-center featured'>
         {/* <Ads /> */}
         {categories.map((category) => {
           return <Category key={category.id} {...category} />;
@@ -40,7 +40,9 @@ const Wrapper = styled.section`
     gap: 2.5rem;
     img {
       height: 25rem;
+      width: 20rem;
     }
+    justify-items: center;
   }
   .btn {
     display: block;
@@ -50,7 +52,7 @@ const Wrapper = styled.section`
   }
   @media (min-width: 576px) {
     .featured {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
   }
 `;

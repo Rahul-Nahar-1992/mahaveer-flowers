@@ -40,11 +40,11 @@ const SingleProductPage = () => {
 
   return (
     <Wrapper>
-      <Helmet>
+      {name && <Helmet>
         <meta charSet="utf-8" />
         <title>{id} - {name}</title>
         <link rel="canonical" href={`https://www.mahaveerflowers.in/products/${id}`} />
-      </Helmet>
+      </Helmet>}
       <PageHero title={name} product />
       <div className='section section-center page'>
         <Link to='/products' className='btn'>

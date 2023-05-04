@@ -17,21 +17,18 @@ const GridView = ({ products }) => {
 const Wrapper = styled.section`
   img {
     height: 25rem;
+    width: 17rem;
   }
 
   .products-container {
     display: grid;
-    gap: 2rem 1.5rem;
+    gap: 2rem;
+    justify-items: center
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 576px) {
     .products-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1170px) {
-    .products-container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     }
   }
 `;

@@ -11,7 +11,7 @@ const ListView = ({ products }) => {
         return (
           <article key={id}>
             <LazyImage src={image} alt={name} loading='lazy' />
-            <div>
+            <div >
               <h4>{name}</h4>
               <p>{description && description.substring(0, 150)}...</p>
               <Link to={`/products/${id}`} className='btn'>
@@ -29,9 +29,10 @@ const ListView = ({ products }) => {
 const Wrapper = styled.section`
   display: grid;
   row-gap: 3rem;
+  justify-items: center;
 
   img {
-    width: 100%;
+    width: 25rem;
     display: block;
     height: 25rem;
     object-fit: contain;
@@ -40,10 +41,6 @@ const Wrapper = styled.section`
   }
   h4 {
     margin-bottom: 0.5rem;
-  }
-  .price {
-    color: var(--clr-primary-6);
-    margin-bottom: 0.75rem;
   }
   p {
     max-width: 45em;

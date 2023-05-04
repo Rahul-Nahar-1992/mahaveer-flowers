@@ -41,7 +41,9 @@ const Wrapper = styled.section`
     gap: 2.5rem;
     img {
       height: 25rem;
+      width: 20rem;
     }
+    justify-items: center;
   }
   .btn {
     display: block;
@@ -51,7 +53,7 @@ const Wrapper = styled.section`
   }
   @media (min-width: 576px) {
     .featured {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
   }
 `;
