@@ -1,20 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from "react"
 
-export const Ads = () => {
-  const [googleAdLoaded, setGoogleAdLoaded] = useState(false)
-
+const Ads = () => {
   useEffect(() => {
-    if (window.adsbygoogle && window.adsbygoogle.loaded) {
-      setGoogleAdLoaded(true)
+    const pushAd = () => {
+      try {
+        const adsbygoogle = window.adsbygoogle
+        console.log({ adsbygoogle })
+        adsbygoogle.push({})
+      } catch (e) {
+        console.error(e)
+      }
     }
-  }, [window.adsbygoogle])
 
+    let interval = setInterval(() => {
+      // Check if Adsense script is loaded every 300ms
+      if (window.adsbygoogle) {
+        pushAd()
+        // clear the interval once the ad is pushed so that function isn't called indefinitely
+        clearInterval(interval)
+      }
+    }, 300)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
   return (
-    googleAdLoaded ?
-      (<ins className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client="ca-pub-5785569447311216"
-        data-ad-slot="2831159739"></ins>)
-      : <></>
-  );
+    <ins
+      className="adsbygoogle"
+      style={{ display: "block" }}
+      data-ad-client="ca-pub-5785569447311216"
+      data-ad-slot="2831159739"
+    ></ins>
+  )
 }
+
+export default Ads
