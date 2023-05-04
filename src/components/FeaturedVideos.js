@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { videoLink } from '../../src/utils/constants'
@@ -13,7 +13,7 @@ const FeaturedVideos = () => {
       <div className='section-center featured'>
         {
             videoLink.slice(0, 2).map((item, i) => (
-                <>{item.link}</>
+                <Fragment key={i}>{item.link}</Fragment>
             ))
           }
       </div>

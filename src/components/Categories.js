@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Error from './Error';
 import Loading from './Loading';
 import Category from './Category';
-import { Ads } from './Ads';
+// import { Ads } from './Ads';
 
 const FeaturedProducts = () => {
   const { categories_loading: loading, categories_error: error, categories } = useProductsContext();
@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
         <div className='underline'></div>
       </div>
       <div className='section-center featured' style={{justifyItems: 'center'}}>
-        <Ads />
+        {/* <Ads /> */}
         {categories.map((category) => {
           return <Category key={category.id} {...category} />;
         })}

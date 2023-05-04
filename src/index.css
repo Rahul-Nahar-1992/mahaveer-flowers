@@ -304,7 +304,3 @@ p {
 .pagination li.active button {
 	border: 1px solid transparent !important;
 }
-
-ins.adsbygoogle[data-ad-status="unfilled"] {
-  display: none !important;
-}
