@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 
-const Ads = () => {
+export const Ads = () => {
   useEffect(() => {
     const pushAd = () => {
       try {
@@ -34,5 +34,3 @@ const Ads = () => {
     ></ins>
   )
 }
-
-export default Ads
