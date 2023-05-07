@@ -32,8 +32,8 @@ const Wrapper = styled.section`
     gap: 2.5rem;
     justify-items: center;
     iframe {
-      height: 30rem;
-      width: 30rem;
+      height: 25rem;
+      width: 20rem;
     }
   }
   .btn {
@@ -44,7 +44,7 @@ const Wrapper = styled.section`
   }
   @media (min-width: 576px) {
     .featured {
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
   }
 `;
