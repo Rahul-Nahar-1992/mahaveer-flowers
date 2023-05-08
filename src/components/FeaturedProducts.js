@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Error from './Error';
 import Loading from './Loading';
 import Product from './Product';
+import { Ads } from './Ads';
 
 const FeaturedProducts = () => {
   const { products_loading: loading, products_error: error, featured_products: featured } = useProductsContext();
@@ -30,6 +31,7 @@ const FeaturedProducts = () => {
       <Link to='/products' className='btn'>
         all products
       </Link>
+      <Ads />
     </Wrapper>
   );
 };

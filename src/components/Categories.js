@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Error from './Error';
 import Loading from './Loading';
 import Category from './Category';
+import { Ads } from './Ads';
 // import { Ads } from './Ads';
 
 const FeaturedProducts = () => {
@@ -27,6 +28,7 @@ const FeaturedProducts = () => {
         {categories.map((category) => {
           return <Category key={category.id} {...category} />;
         })}
+        <Ads />
       </div>
     </Wrapper>
   );
