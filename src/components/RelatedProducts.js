@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Error from './Error';
 import Loading from './Loading';
 import Product from './Product';
+import { Ads } from './Ads';
 
 const RelatedProducts = () => {
   const { related_products_loading: loading, related_products_error: error, related_products: related } = useProductsContext();
@@ -34,6 +35,7 @@ const RelatedProducts = () => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
+      <Ads />
     </Wrapper>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Product from './Product';
+import { Ads } from './Ads';
 
 const GridView = ({ products }) => {
   return (
@@ -10,6 +11,7 @@ const GridView = ({ products }) => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
+      <Ads />
     </Wrapper>
   );
 };

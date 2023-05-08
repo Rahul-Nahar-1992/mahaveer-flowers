@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { LazyImage } from './LazyImage'
+import { Ads } from './Ads';
 
 const ListView = ({ products }) => {
   return (
@@ -22,6 +23,7 @@ const ListView = ({ products }) => {
           </article>
         );
       })}
+      <Ads />
     </Wrapper >
   );
 };

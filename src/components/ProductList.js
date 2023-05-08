@@ -6,7 +6,7 @@ import ListView from './ListView';
 const ProductList = (state, props) => {
   const { filtered_products: products, grid_view } = useFilterContext();
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 9
+  const itemsPerPage = 8
 
   useEffect(() => {
     state.scrollToTop();
