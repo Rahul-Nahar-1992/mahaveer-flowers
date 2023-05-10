@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navbar, Sidebar, Footer, Loading } from './components';
 import ScrollToTop from './components/ScrollToTop';
 import OurWorkPage from './pages/OurWorkPage';
+import SingleBlogPage from './pages/SingleBlogPage';
+import BlogsPage from './pages/BlogsPage';
+
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-185663515-1');
 
@@ -55,7 +58,11 @@ function App() {
           <Route exact path='/products'>
             <Products />
           </Route>
+          <Route exact path='/blogs'>
+            <BlogsPage />
+          </Route>
 
+          <Route exact path='/blogs/:id' children={<SingleBlogPage />} />
           <Route exact path='/products/:id' children={<SingleProduct />} />
 
           <Route path='*'>

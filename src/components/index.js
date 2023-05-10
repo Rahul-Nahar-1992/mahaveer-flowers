@@ -11,9 +11,11 @@ import Error from './Error'
 import ProductImages from './ProductImages'
 import Filters from './Filters'
 import ProductList from './ProductList'
+import BlogList from './BlogList'
 import Sort from './Sort'
 import PageHero from './PageHero'
 import RelatedProducts from './RelatedProducts'
+import Blog from './Blog'
 
 export {
   FeaturedProducts,
@@ -31,5 +33,7 @@ export {
   Sort,
   PageHero,
   Categories,
-  RelatedProducts
+  RelatedProducts,
+  BlogList,
+  Blog
 }
