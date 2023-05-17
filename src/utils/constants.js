@@ -64,5 +64,43 @@ export const blogs = [
     <p>At Mahaveer flowers, We have a broad selection of artificial flowers in a variety of hues and sizes. Our flowers have the appearance and texture of real flowers since they are produced from premium materials. We offer the ideal flowers for you, whether you want to design a gorgeous centrepiece or lovely floral arrangement. Visit our <a href="https://www.mahaveerflowers.in">website</a> to look through our selection and enhance your home's decor with timeless beauty.</p>
     `,
     image: 'https://res.cloudinary.com/dupeaisq7/image/upload/v1674126065/cuaxjj7bsokkfwooewd4.jpg'
+  },
+  {
+    id: 'say-it-with-mahaveer-flowers-the-perfect-expression-of-love',
+    name: 'Say it with Mahaveer Flowers - The Perfect Expression of Love!',
+    description:`
+    <p>Welcome to <a href="https://www.mahaveerflowers.in">Mahaveer Flowers</a>, the online flower shop with a wide selection of fresh and vibrant flowers for all occasions!</p>
+
+    <p>At Mahaveer Flowers, we understand that flowers are more than just a gift; they're an expression of love, appreciation, and admiration. That's why we strive to provide our customers with the best quality flowers at the most competitive prices. Our goal is to make sure that you can find the perfect flower arrangement for any occasion.</p>
+
+    <p>Whether you're looking for a bouquet of roses for your anniversary or a basket of lilies for your mother's birthday, we have something for everyone. We offer a variety of flower arrangements in different sizes and colors to suit your needs. From classic red roses to exotic orchids, we have something for everyone.</p>
+
+    <p>Our selection of flowers is carefully curated to ensure that each arrangement is unique and special. We also take pride in our customer service and strive to make sure that each customer is satisfied with their purchase. Our team of experts is always available to answer any questions you may have and help you find the perfect flower arrangement for your special occasion.</p>
+
+    <p>At Mahaveer Flowers, we believe that flowers should be enjoyed by everyone, no matter what their budget is. That's why we offer a wide range of prices so that everyone can find something within their budget. Whether you're looking for something simple or something extravagant, we have something for everyone.</p>
+
+    <p>The benefits of ordering from Mahaveer Flowers are numerous:
+      <ul>
+        <li>
+        <b>Quality:</b> Our flowers are hand-picked and carefully inspected to ensure that only the freshest and highest quality blooms are used in our arrangements.
+        </li>
+        <li>
+        <b>Variety:</b> We offer a wide variety of flowers in different sizes and colors so that you can find the perfect arrangement for any occasion.
+        </li>
+        <li>
+        <b>Price:</b> We offer competitive prices so that everyone can find something within their budget.
+        </li>
+        <li>
+        <b>Convenience:</b> Our online store makes it easy to order your flowers without ever leaving your home.
+        </li>
+        <li>
+        <b>Customer Service:</b> Our team of experts is always available to answer any questions you may have and help you find the perfect flower arrangement for your special occasion.
+        </li>
+      <ul>
+    </p>
+
+    <p>At <a href="https://www.mahaveerflowers.in">Mahaveer Flowers</a>, we strive to provide our customers with the best quality flowers at the most competitive prices. Whether you're looking for a classic bouquet of roses or something more exotic, we have something for everyone. So come visit us today and let us help you find the perfect flower arrangement for your special occasion!</p>
+    `,
+    image: 'https://res.cloudinary.com/dupeaisq7/image/upload/v1674451681/kgzrjkelqizm6wohk8rw.jpg'
   }
 ]
