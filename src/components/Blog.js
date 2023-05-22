@@ -12,14 +12,17 @@ const Blog = ({ image, name, id }) => {
     </div>
 
     <footer>
+    <Link to={`/blogs/${id}`}>
       <h5>{name}</h5>
+      </Link>
     </footer>
   </Wrapper >
 }
 
 const Wrapper = styled.article`
   img {
-    max-width: 100%;
+    width: 25rem;
+    height: 15rem;
     object-fit: contain;
     border-radius: var(--radius);
     transition: var(--transition);

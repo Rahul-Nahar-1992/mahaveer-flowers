@@ -10,7 +10,7 @@ const SingleBlogPage = () => {
   const markup = {__html: description}
   
   return (
-    <Wrapper>
+    <Wrapper className="section-center">
       <Helmet>
         <meta charSet="utf-8" />
         <title>{id} - {name}</title>
@@ -42,7 +42,6 @@ const SingleBlogPage = () => {
 
 const Wrapper = styled.main`
   .blog {
-    margin: 2rem;
     max-width: 100%;
   }
   h3{

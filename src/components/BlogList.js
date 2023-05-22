@@ -67,7 +67,7 @@ const Wrapper = styled.section`
     justify-items: center
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 820px) {
     .blogs-container {
       grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     }
