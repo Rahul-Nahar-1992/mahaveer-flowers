@@ -12,7 +12,7 @@ const FeaturedVideos = () => {
       </div>
       <div className='section-center featured'>
         {
-            videoLink.slice(0, 2).map((item, i) => (
+            videoLink.slice(0, 3).map((item, i) => (
                 <Fragment key={i}>{item.link}</Fragment>
             ))
           }
